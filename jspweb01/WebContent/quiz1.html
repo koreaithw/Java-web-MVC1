@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="">
+		<h1>회원가입</h1>
+		이     름	<input type="text" name="name" required autofocus> <br> 
+		생년월일    <input type="text" min="1" max="30" required>
+				<input type="text" min="1" max="12" required>
+				<input type="text" min="1900" max="2022" required> <br>		
+		나     이 	<input type="text" name="age"> <br> 
+		성     별	<input type="radio" name="sex" value="남" required> 남 
+				<input type="radio" name="sex" value="여" required> 여 <br>
+		폰  번 호	<select name="nation" required>
+			<option value="+82"> 한국 </option>
+			<option value="+06"> 몰름 </option>
+			<option value="+01"> 미국 </option>
+				</select> 
+				<input type="text" name="number"> 
+				<input type="text" name="number2"> <br>
+		주     소	<input type="text" name="address" width="1000" required> <br>
+		자기소개	<textarea name="introduction" rows="10" cols="50" placeholder="자기소개"></textarea><br>
+		<button name="reset">초기화단추</button><br>
+		<button name="submit">제출단추</button>
+	</form>
+</body>
+</html>
