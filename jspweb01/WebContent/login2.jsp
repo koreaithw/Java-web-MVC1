@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,16 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
-// 자바 영역
+<% //자바 영역.
+request.setCharacterEncoding("utf-8");
 String uid = request.getParameter("id");
-String ups = request.getParameter("ps");
-%>
-<!--html 주석  -->
-<%--JSP 주석  --%>
+String res = "<h3>User ID:"+uid+"</h3>";
+out.print(res);
 
-<h3>User ID: <%=uid %></h3>
-<h3>User PW: <%=ups %></h3>
-<h5>by 김현엽</h5>
+%>
 </body>
 </html>

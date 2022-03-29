@@ -7,7 +7,7 @@
 <body>
 <!--form 으로 감싸야 입력받은 값을 다른데로 넘겨줄 수 있음.!!!  -->
 <!-- <form action="login.jsp"> == 여기서 입력받은것을 login.jsp에서 넘겨받아서 처리해줌 (html 문서이름을 호출)> -->
-<form action="login.jsp"> <!--넘겨줄때 주소창에 값들을 노출하는 방식(get or post)-->
+<form action="login2.jsp" method="post"> <!--넘겨줄때 주소창에 값들을 노출하는 방식(get or post)-->
 	<table align = center>
 	<tr> <!--행  -->
 	<td>아이디  </td> <!--열 -->
@@ -21,7 +21,7 @@
 	<td colspan=2 align = center> <!--colspan 컬럼 2개를 하나로 쳐라, align = 위치 가운데  -->
 	<input type="submit" value="로그인하기">
 	</td>
-	</tr>
+	</tr> 
 	</table>
 </form>
 
