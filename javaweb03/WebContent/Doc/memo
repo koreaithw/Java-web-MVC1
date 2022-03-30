@@ -1,0 +1,31 @@
+
+내장객체 implicit Object
+
+내장객체란 JSP에 의해서 미리 정의된 객체로 JSP 내에서 선언없이 이용할 수 있는 객체를 말한다.
+
+내장객체의 종류
+
+request : 주로 URL에 포함된 사용자의 입력값을 추출하는 용도로 사용
+response : 페이지 리 다이렉트 용으로 많이 사용된다.(다른페이지로점프)(회원가입하고 메인 페이지로 쏴줌)
+session : 브라우저와의 연결 정보를 유지 (로그인등 연결 정보 유지)(기본 30분)
+
+***********
+request 객체
+***********
+
+accept : image/gif, image/jpeg, image/pjpeg, application/x-ms-application, application/xaml+xml, application/x-ms-xbap, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
+accept-language : ko-KR
+cache-control : no-cache
+ua-cpu : AMD64
+accept-encoding : gzip, deflate
+user-agent : Mozilla/5.0 (Windows NT 6.2; Win64; x64; Trident/7.0; rv:11.0) like Gecko
+host : localhost:8181
+connection : Keep-Alive
+
+**************
+response 객체 (다른페이지로 강제이동하는 리디렉션 구현을 위한 용도로 많이 사용된다.)
+**************
+
+session 객체
+사용자가 로그인 후 그 로그인 상태를 유지할 필요가 있다.
+서버에서 데이터를 유지한다.(쿠키는 유저측에서 데이터를 유지한다.)
