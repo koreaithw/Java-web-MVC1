@@ -29,3 +29,20 @@ response 객체 (다른페이지로 강제이동하는 리디렉션 구현을 �
 session 객체
 사용자가 로그인 후 그 로그인 상태를 유지할 필요가 있다.
 서버에서 데이터를 유지한다.(쿠키는 유저측에서 데이터를 유지한다.)
+
+JDBC Java Database Connectivity JDBC는 자바에서 데이터 베이스에 쉽게 접근하도록
+도와주는 연결통로이다. 자바 프로그램이 데이터 베이스의 검색과 수정을 위한 sql문도 전송하고 결과도
+받게 된다.
+
+JDBC를 사용하면 데이터 베이스의 종류(mongo db, mysql, oracle...)과 상관없이
+데이터베이스 작업을 일관성 있게 처리 할 수 있다.
+						 
+						 oracle
+자바프로그램 ->JDBC 인터페이스	 Mysql
+					 	 MSsql
+					 	 MariaDB
+
+					 	 
+이클립스에서 JDBC를 이용하려면 사용하려는 프로젝트의 
+WebConten - WEB-INF - lib 위치에 다운받은 
+"mysql-connector-java-8.0.28" 파일을 복사한다.
