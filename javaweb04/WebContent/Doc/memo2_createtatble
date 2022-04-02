@@ -1,0 +1,34 @@
+1. 데이터 베이스 만들기
+
+String sql = "CREATE DATABASE univ2"; //DB생성 sql 구문
+
+2. 데이베이스 삭제
+
+String sql = "DROP DATABASE univ2";//DB 생성 sql 구문
+
+3. 테이블 만들기
+
+String sql = "CREATE TABLE student("
+			+"hakbun int not null,"
+			+"name varchar(10),"
+			+"dept varchar(20),"
+			+"primary key(hakbun))";
+
+*.테이블에 데이터 넣기 구문
+
+	//univ_table_input.html에서 입력한것을 받야하한다.
+	String hakbun = request.getParameter("hakbun");
+	String name = request.getParameter("name");
+	String dept = request.getParameter("dept");
+	
+	String sql = "INSERT INTO student VALUES(?,?,?)";
+	
+	pstmt = conn.prepareStatement(sql);  //sql객체를 pstmt에 넣는다
+		pstmt .setString(1, hakbun);  //sql구문의 ? 자리에 넣을값 지정
+		pstmt .setString(2, name);    //sql은 1부터 시작
+		pstmt .setString(3, dept);
+	pstmt.executeUpdate();
+
+*.테이블에서 데이터 가져오기구문 
+
+String sql = "SELECT * FROM student"; //데이터를 가져오기
