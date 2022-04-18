@@ -10,7 +10,7 @@
 </head>
 <body>
 	<%!//선언문
-	String title = "게시판 작성";%>
+	String title = "공지사항 작성";%>
 	<!-- CSS only -->
 	<link
 		href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"

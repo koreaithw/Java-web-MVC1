@@ -16,7 +16,7 @@ public class FeedDAO {
 			conn = ConnectionPool.get();
 			pstmt = conn.prepareStatement(sql);
 				pstmt.setString(1, uid);
-				pstmt.setString(2, ucon);
+				pstmt.setString(2, ucon); 
 				pstmt.setString(3, ufname);
 			int count = pstmt.executeUpdate(); // 정보가 넘어오지는 않지만 성공과 실패가 0 과 1로 넘어온다
 			return (count>0) ? true : false;
@@ -25,6 +25,7 @@ public class FeedDAO {
 			if(conn !=null) conn.close();
 		}
 	}
+	
 	public ArrayList<FeedDTO> getList() throws NamingException, SQLException{
 		Connection conn = null;
 		PreparedStatement pstmt = null;

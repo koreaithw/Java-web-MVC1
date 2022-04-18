@@ -19,12 +19,16 @@ public class FeedDTO {
 		return images;
 	}
 
-
-	public FeedDTO(String id, String content, String ts, String images) {
+	public FeedDTO(String id, String content, String ts) {
 		super();
 		this.id = id;
 		this.content = content;
 		this.ts = ts;
+		
+	}
+
+	public FeedDTO(String id, String content, String ts, String images) {
+		this(id,content,ts);
 		this.images = images;
 	}
 

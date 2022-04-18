@@ -29,10 +29,10 @@
 ArrayList<FeedDTO> feeds = (new FeedDAO()).getList();
 for (FeedDTO feed : feeds) {
 	String img = feed.getImages();
-	String imgstr = "";
+	String imgstr=" ";
 	
  	if (img != null) {
- 		imgstr = "<img src='images/" + img + "' width = 240>";
+ 		imgstr = "<img src='images/" + img + "'width = 240>";
  	} 
 %>
 <tr><td colspan=2><hr></td></tr>
